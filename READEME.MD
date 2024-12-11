@@ -40,4 +40,4 @@ If you have any questions or suggestions, feel free to contact me at [shahramjab
 
 ## netlify
 
-link:
+link: https://shahramjabariplayers.netlify.app/
