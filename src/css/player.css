@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+.manchester {
+  font-size: var(--first-font-size);
+  padding-top: var(--second-padding);
+  font-weight: bold;
+  color: var(--third-color);
+  text-align: center;
+}
+.squad-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--second-padding);
+  padding: var(--second-padding);
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    var(--first-background-color)
+  );
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--second-background-color);
+  color: var(--last-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--second-padding);
+  padding: var(--large-padding);
+}
+
+.headline {
+  text-align: center;
+  width: 100%;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+  color: var(--third-color);
+}
+
+.headline hr {
+  width: 60px;
+  margin-top: 15px;
+  border: 2px solid var(--first-background-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: var(--first-border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: var(--first-padding);
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.player-info {
+  flex: 1;
+  padding-right: var(--first-padding);
+}
+
+.player-name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--first-font-size);
+  font-weight: 600;
+  color: var(--third-color);
+}
+
+.player-team {
+  font-size: var(--first-font-size);
+  font-weight: bold;
+  font-weight: 700;
+  color: var(--first-background-color);
+}
+
+.player-info p {
+  font-size: 1rem;
+  color: #555;
+  padding-top: var(--first-padding);
+}
+
+.player-image {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  flex-shrink: 0;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posistion {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--first-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: var(--base-font-size);
+}
+
+.player-stats {
+  padding-top: var(--first-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--first-padding);
+}
+
+.player-stats div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-stats__main {
+  font-weight: 500;
+  color: #333;
+}
+
+.player-stat__number {
+  color: var(--first-background-color);
+  font-weight: 600;
+}
+
+/* Responsiv design */
+@media screen and (max-width: 768px) {
+  .player {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .player-info {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .player-name {
+    font-size: var(--first-font-size);
+  }
+
+  .player-image {
+    width: 90px;
+    height: 90px;
+  }
+}

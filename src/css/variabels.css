@@ -1,0 +1,41 @@
+:root {
+  /* main width and height */
+  --main-width: 100%;
+  --second-width: 50%;
+
+  --main-height: 100%;
+  --second-height: 55%;
+  --third-height: 600px;
+
+  /* backgroundcolor */
+  --first-background-color: red;
+  --second-background-color: #ffffff;
+  --third-background-color: #f1f1f1;
+  --last-background-color: #000000;
+
+  /* border */
+  --first-border-radius: 8px;
+  --second-border-radius: 1rem;
+  --third-border-radius: 2rem;
+
+  /* color */
+  --first-color: #fff;
+  --second-color: #000;
+  --third-color: #1d3557;
+  --last-color: #333;
+
+  /* padding */
+  --first-padding: 1rem;
+  --second-padding: 2rem;
+  --large-padding: 4rem;
+  --exstra-large-padding: 6rem;
+
+  /* margin */
+  --first-margin: 1rem;
+  --small-margin: 8px;
+
+  /* font size */
+  --first-font-size: 2rem;
+  --second-font-size: 1.5rem;
+  --base-font-size: 1rem;
+}
